@@ -63,6 +63,103 @@ body{
     color: black;
 }
 
+.vdo__slider__container{
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.team__member__img{
+    width: 50%;
+}
+.member__img{
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.team__member__img{
+  position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.team__member__img:hover  {
+    opacity: 50%;
+}
+.overlay:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.overlay__img {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.zippy__lyf__container{
+    position: relative;
+}
+
+  #myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .content__container{
+    position: absolute;
+  top: 0;
+  color: black;
+  width: 100%;
+  padding: 20px;
+  }
+
+  .slider-nav, .slider-for{
+      text-align: center;
+  }
+
+  .input-group-text{
+    background-color: purple; 
+    color: white;
+  }
+
+  .input-group-text:hover {
+      background-color: yellow;
+      color: black;
+      cursor: pointer;
+  }
+
+  .footer__desc{
+      font-size: 10px;
+  }
+
+  .media__icons:hover{
+    background-color: rgba(255, 255, 255, 0.65);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1px;
+  }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -123,14 +220,14 @@ body{
         height: 300px;
         left: 50%;
     }
-}
 
-/*
-<div class="row mt-md-5 mt-sm-3">
-      <div class="col-md-6 text-center" style="font-size: larger;">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut explicabo. Nemo enim ipsam voluptatem quia, sed quia consequuntur magni minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. Excepteuo ad quasi architecto beatae vitae dicta beatae vitae dicta ad quasi architecto beatae vitae dicta cupidatat non proident, mollit anim id est ad quasi architecto beatae vitae dicta laborum."
-      </div>
-      <div class="col-6 text-center">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/554/747/small/umbrella_010.jpg" alt="umbrella image" class="rounded mx-auto d-block">
-      </div>
-    </div>
+    .vdo__slider__container{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .team__member__img{
+        width: 250px;
+    }
+
+}
